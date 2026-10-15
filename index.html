@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página en GitHub</title>
+    
+    <!-- Cargamos jQuery desde internet (CDN) -->
+    <script src="https://jquery.com"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Hola Mundo desde GitHub Pages!</h1>
+    <p id="texto">Este es un texto de prueba.</p>
+    
+    <button id="miBoton">Haz clic aquí</button>
+
+    <!-- Código de jQuery -->
+    <script>
+        $(document).ready(function() {
+            $("#miBoton").click(function() {
+                $("#texto").text("¡Funciona! El jQuery se ejecutó correctamente. 🎉");
+                $(this).fadeOut(500); // El botón desaparece suavemente
+            });
+        });
+    </script>
+
+</body>
+</html>
